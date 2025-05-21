@@ -7,7 +7,11 @@ class teacher
 public:
 /**
  * constructor
+ * Types:Non-paramaterized constructors 
  */
+
+ 
+// Non-paramaterized
 teacher(){
     dept="Computer Science";
     cout<<"Hello my name is Kaushal"<<endl;
