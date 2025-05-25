@@ -14,9 +14,9 @@ public:
     }
     void getInfo()
     {
-        cout << "Name:" << name << endl;
         cout << "Id:" << id;
-    }
+        cout << "Name:" << name << endl;
+    } 
 };
 int main()
 {
