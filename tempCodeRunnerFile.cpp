@@ -1,0 +1,3 @@
+ // void getPrivate(){
+    //     cout<<privateVariable;
+    // }
