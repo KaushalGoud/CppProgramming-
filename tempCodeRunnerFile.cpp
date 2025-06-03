@@ -1,1 +1,0 @@
- student s2(s1);
