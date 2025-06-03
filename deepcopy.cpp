@@ -15,8 +15,8 @@ student(string name,int cgpa){
 
 student(student &obj){
     this->name=obj.name;
-    this->cgpaPtr=obj.cgpaPtr;
-
+cgpaPtr=new double;
+   *cgpaPtr=*obj.cgpaPtr;
 }
 void getInfo(){
     cout<<"Name:"<<name<<endl<<"CGPA:"<<*cgpaPtr;
@@ -29,8 +29,9 @@ int main()
   student s2(s1);
 s1.getInfo();
 *(s2.cgpaPtr)=2.3; //Problem in shallow copy
+s2.name="Madan";
 cout<<endl;
-s1.getInfo();
+s2.getInfo();
 
 
     return 0;
