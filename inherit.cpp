@@ -21,6 +21,7 @@ class student:public teacher{
    
     student(string Faculty,string name,int age,float height):teacher(Faculty,name,age){
    this->height=height;
+   
  }
 
 
@@ -32,3 +33,5 @@ int main(){
     
     return 0;
 }
+
+//constructor ma paila base call hunxa destructor ma paila dervied call  hunxa
