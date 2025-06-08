@@ -14,11 +14,9 @@ public:
 };
 
 class student : private teacher {
-  protected:
-  int x;
 public:
     void set() {
-        protectedVariable = 10; // OK because it's within a derived class
+       protectedVariable = 10; 
     }
 
     void get() {
