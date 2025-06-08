@@ -1,3 +1,1 @@
- // void getPrivate(){
-    //     cout<<privateVariable;
-    // }
+  s1.set();
