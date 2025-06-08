@@ -1,38 +1,35 @@
 #include <iostream>
 #include <string>
-using namespace std; 
-class teacher{
-  private:
-  int privateVariable;
- 
-  protected:
-  
-  int protectedVariable;
-  public:
-  int publicVariable;
+using namespace std;
 
+class teacher {
+private:
+    int privateVariable;
 
-};
-class student:private teacher{
+protected:
+    int protectedVariable;
 
 public:
-int set(){
-protectedVariable=10;
-}
+    int publicVariable;
+};
 
-void get(){
+class student : private teacher {
+  protected:
+  int x;
+public:
+    void set() {
+        protectedVariable = 10; // OK because it's within a derived class
+    }
 
-cout<<protectedVariable;
-}
+    void get() {
+        cout << protectedVariable;
+    }
+};
 
-   
- };
-
-int main()
-{
+int main() {
     student s1;
-  s1.set();
-  s1.get();
-
+  
+    s1.set();
+    s1.get();
     return 0;
 }
