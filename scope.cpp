@@ -26,6 +26,7 @@ public:
     }
 };
 
+
 int main() {
     student s1;
   
