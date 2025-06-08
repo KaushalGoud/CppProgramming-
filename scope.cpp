@@ -14,8 +14,7 @@ class teacher{
 
 };
 class student:private teacher{
-  private:
-  int privateVariable;
+
 public:
 int set(){
 protectedVariable=10;
