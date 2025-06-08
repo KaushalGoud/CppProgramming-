@@ -33,7 +33,7 @@ class cSandwich : public Sandwich
 {
 public:
     string extraFill;
-    cSandwich(string BreadType, string fillings, string sauce, string extraFill) : Sandwich(BreadType, fillings, sauce)
+    cSandwich(string BreadType, string fillings, string sauce, string extraFill) : Sandwich(BreadType, fillings+ extraFill, sauce)
     {
         this->extraFill;
       
@@ -48,7 +48,7 @@ int main()
       cin>>choice;
       cout<<"Okay sir! :)"<<endl;
       if(choice=="chicken"){
-     cSandwich c1("Chicken","sauce mayo tomato","ketchup","Chicken pattie");
+     cSandwich c1("Chicken","sauce mayo tomato","ketchup"," ,chicken pattie");
      c1.yourOrder();
      
      
