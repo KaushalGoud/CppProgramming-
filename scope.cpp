@@ -28,7 +28,9 @@ public:
 int main() {
     student s1;
   
-    s1.set();
+    // s1.set();
     s1.get();
+    teacher t1;
+  
     return 0;
 }
