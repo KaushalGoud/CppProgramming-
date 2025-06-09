@@ -15,7 +15,7 @@ public:
 
 class student : private teacher {
    
-    public:
+   public:
 
     void set() {
        protectedVariable = 10; 
