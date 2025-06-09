@@ -14,7 +14,9 @@ public:
 };
 
 class student : private teacher {
-public:
+   
+    public:
+
     void set() {
        protectedVariable = 10; 
     }
@@ -28,7 +30,7 @@ public:
 int main() {
     student s1;
   
-    // s1.set();
+    s1.set();
     s1.get();
     teacher t1;
   
