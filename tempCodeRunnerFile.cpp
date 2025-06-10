@@ -1,1 +1,5 @@
-   // s1.set();
+public:
+// int a;
+// bool b=true;
+// int kk;
+   

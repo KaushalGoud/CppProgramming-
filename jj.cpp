@@ -1,23 +1,20 @@
 #include<iostream>
 #include<string>
 using namespace std;
-class parent{
-public:
-parent(){
-    cout<<"parent"<<endl;
-}
-};
-class child:public parent{
 
-    public:
-    child(){
-    cout<<"Child"<<endl;
-    }
+class child{
+public:
+int a;
+bool b=true;
+int kk;
+   
 
 };
 int main(){
 child c1;
-parent p1;
+
+
+cout<<sizeof(c1.b);
 
     return 0;
 }
